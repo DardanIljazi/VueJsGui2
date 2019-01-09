@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css" />
     <link rel="stylesheet" href="css" />
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="js/"></script>
 </head>
 <body>
 
-<ul v-for="response in responses">
-    <li>
-        <a href="#" @click="takeUserResponse(response)">{{ response }}</a>
-    </li>
-</ul>
+<div id="app">
+    <h1>{{ quizzList.title }}</h1>
+    <h2>{{ quizzList.description }}</h2>
 
-<button @click="takeUserResponse(response)">Response</button>
+    <div class="question-responses-list" v-for="question in quizzList.questions">
+        <h3>{{ question.question }}</h3>
+        <div class="responses-list" v-for="answers in question.answers">
+            <input type="radio" name="answerResponse" v-model="lastUserResponse" :value="answers.value"> {{ answers.value }}<br>
+            <!--<a href="#" @click="takeUserResponse(response)">{{ response }}</a>-->
+            <!--<a href="#" v-model="lastUserResponse">{{ response }}</a>-->
+        </div>
+    </div>
 
-<script src="script.js"></script>
+    <span>Last user response: {{ lastUserResponse }}</span>
+
+    <button @click="takeUserResponse(quizzList.id)">Response</button>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
