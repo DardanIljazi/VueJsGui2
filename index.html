@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>FastQuizz</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="js/"></script>
 </head>
 <body>
-$END$
+
+<ul v-for="response in responses">
+    <li>
+        <a href="#" @click="takeUserResponse(response)">{{ response }}</a>
+    </li>
+</ul>
+
+<button @click="takeUserResponse(response)">Response</button>
+
+<script src="script.js"></script>
 </body>
 </html>
