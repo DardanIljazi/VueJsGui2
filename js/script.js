@@ -1,8 +1,9 @@
-var app = new Vue({
+let app = new Vue({
     el: '#app',
     data: {
         lastUserResponse : [],
         listOfUsersResponse: [],
+        indexQuestionInQuizzList: 0,
         quizzList: {
             "id": "5c1a1e0a1b25c0003f2c872a",
             "title": "Maths Vecteurs",
@@ -45,14 +46,21 @@ var app = new Vue({
         "number_participants": 28
     },
     methods: {
-        takeUserResponse: function (test) {
+        takeUserResponse: function (id) {
             console.log("id");
             console.log(id);
-            this.listOfUsersResponse.push({"id": test, "response": this.lastUserResponse });
-            console.log("listOfUserResponse: ");
-            console.log(this.listOfUsersResponse);
-            // console.log("listOfUserResponse: ");
-            // console.log(this.lastUserResponse);
-        }
+            this.listOfUsersResponse.push({"id": id, "response": this.lastUserResponse });
+            console.log("listOfUserResponse[id,response]: ");
+            console.log(this.listOfUsersResponse[this.listOfUsersResponse.length-1].id + "," + this.listOfUsersResponse[this.listOfUsersResponse.length-1].response);
+            this.indexQuestionInQuizzList += 1;
+            console.log(this.indexQuestionInQuizzList);
+       }//,
+        // loadQuestionAndResponsesFor: function(index){
+        //
+        // },
+        // mounted: function() {
+        //     this.loadQuestionAndResponsesFor(this.indexQuestionInQuizzList);
+        // },
+
     }
 })

@@ -15,18 +15,20 @@
     <h1>{{ quizzList.title }}</h1>
     <h2>{{ quizzList.description }}</h2>
 
-    <div class="question-responses-list" v-for="question in quizzList.questions">
-        <h3>{{ question.question }}</h3>
-        <div class="responses-list" v-for="answers in question.answers">
+    <div class="question-responses-list">
+        <h3>{{ quizzList.questions[indexQuestionInQuizzList].question }}</h3>
+        <div class="responses-list" v-for="answers in quizzList.questions[indexQuestionInQuizzList].answers">
             <input type="radio" name="answerResponse" v-model="lastUserResponse" :value="answers.value"> {{ answers.value }}<br>
             <!--<a href="#" @click="takeUserResponse(response)">{{ response }}</a>-->
             <!--<a href="#" v-model="lastUserResponse">{{ response }}</a>-->
         </div>
     </div>
 
+    <!--{{ quizzList.questions[0].question }}-->
+
     <span>Last user response: {{ lastUserResponse }}</span>
 
-    <button @click="takeUserResponse(quizzList.id)">Response</button>
+    <button @click="takeUserResponse(quizzList.id)">Répondre</button>
 </div>
 
 <script src="js/script.js"></script>
