@@ -3,33 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>FastQuizz</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/bootstrap-grid.css" />
-    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
-    <link rel="stylesheet" href="css" />
+
+    <link rel="stylesheet" href="css/bootstrap-grid.css"/>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
 </head>
 <body>
 
-<div id="app">
-    <h1>{{ quizzList.title }}</h1>
-    <h2>{{ quizzList.description }}</h2>
+<body id="page-top">
 
-    <div class="question-responses-list">
-        <h3>{{ quizzList.questions[indexQuestionInQuizzList].question }}</h3>
-        <div class="responses-list" v-for="answers in quizzList.questions[indexQuestionInQuizzList].answers">
-            <input type="radio" name="answerResponse" v-model="lastUserResponse" :value="answers.value"> {{ answers.value }}<br>
-            <!--<a href="#" @click="takeUserResponse(response)">{{ response }}</a>-->
-            <!--<a href="#" v-model="lastUserResponse">{{ response }}</a>-->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">FastQuizz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">A propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </div>
+</nav>
+<div id="app">
 
-    <!--{{ quizzList.questions[0].question }}-->
+    <header class="bg-primary text-white">
+        <div class="container text-center">
+            <h1>{{ quizzList.title }}</h1>
+            <p class="lead">{{ quizzList.description }}</p>
+        </div>
+    </header>
 
-    <span>Last user response: {{ lastUserResponse }}</span>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>{{ quizzList.questions[indexQuestionInQuizzList].question }}</h2>
+                    <div class="question-responses-list">
+                        <div class="responses-list" v-for="(answers, index) in quizzList.questions[indexQuestionInQuizzList].answers">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="answerResponse" :id="'radio'+index" :value="answers.value">
+                                <label class="form-check-label" :for="'radio'+index">
+                                    {{answers.value }}
+                                </label>
+                            </div>
+                            <!--<a href="#" @click="takeUserResponse(response)">{{ response }}</a>-->
+                            <!--<a href="#" v-model="lastUserResponse">{{ response }}</a>-->
+                        </div>
+                    </div>
 
-    <button @click="takeUserResponse(quizzList.id)">Répondre</button>
+                    <button @click="takeUserResponse(quizzList.id)" class="btn btn-primary btn-lg btn-block">Répondre</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; FastQuizz 2019</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
 
 <script src="js/script.js"></script>
 </body>
