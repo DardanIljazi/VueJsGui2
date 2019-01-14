@@ -30,10 +30,11 @@ let app = new Vue({
                 {
                     "question": "Qu’est-ce qu’une fonction?",
                     "image": "",
-                    "answers": [                        {
-                        "value": "Un nombre",
-                        "correct": "false",
-                    },
+                    "answers": [
+                        {
+                            "value": "Un nombre",
+                            "correct": "false",
+                        },
                         {
                             "value": "Une opération",
                             "correct": "true",
@@ -54,13 +55,13 @@ let app = new Vue({
             console.log(this.listOfUsersResponse[this.listOfUsersResponse.length-1].id + "," + this.listOfUsersResponse[this.listOfUsersResponse.length-1].response);
             this.indexQuestionInQuizzList += 1;
             console.log(this.indexQuestionInQuizzList);
-       }//,
-        // loadQuestionAndResponsesFor: function(index){
-        //
-        // },
-        // mounted: function() {
-        //     this.loadQuestionAndResponsesFor(this.indexQuestionInQuizzList);
-        // },
+        }//,
+         // loadQuestionAndResponsesFor: function(index){
+         //
+         // },
+         // mounted: function() {
+         //     this.loadQuestionAndResponsesFor(this.indexQuestionInQuizzList);
+         // },
 
     }
 })
