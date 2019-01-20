@@ -1,14 +1,148 @@
+$CustomColor: rgb(56, 135, 224);
+$bgLight: #FAFCFD;
+$darkBlue: #37A8F2;
+$lightBlue: #37A8F2;
+$darkGrey: #666666;
+$lightGrey: #607D8B;
 
-header {
-  padding: 154px 0 100px;
+/** GENERAL STYLE **/
+%basic-font-family {
+  font-family: Roboto, sans-serif;
 }
 
-@media (min-width: 992px) {
-  header {
-    padding: 156px 0 100px;
+@mixin transition($duration: 125ms, $type: ease-in-out) {
+  -webkit-transition: all $duration $type !important;
+  -moz-transition: all $duration $type !important;
+  -ms-transition: all $duration $type !important;
+  -o-transition: all $duration $type !important;
+  transition: all $duration $type !important;
+}
+
+* {
+  @extend %basic-font-family;
+  @include transition();
+
+}
+
+html, body {
+  @extend %basic-font-family;
+  box-sizing: border-box !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $darkGrey;
+  font-weight: normal;
+
+  &.subtitle {
+    color: $lightGrey;
+    font-weight: 300;
   }
 }
 
-section {
-  padding: 150px 0;
+.bg-light-blue {
+  background-color: $lightBlue;
+
+  &.hover-lighten:hover {
+    background-color: lighten($lightBlue, 5%);
+  }
 }
+
+.bg-dark-blue {
+  background-color: $darkBlue;
+
+  &.hover-lighten:hover {
+    background-color: lighten($darkBlue, 5%);
+  }
+}
+
+/** --END OF GENERAL STYLE **/
+
+/** TOP PAGE **/
+#logoMenu {
+  display: inline-block;
+  max-width: 200px;
+}
+
+/** -- END TOP PAGE **/
+
+/** HOME PAGE **/
+
+main {
+  &#mainPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgLight;
+    height: 80vh;
+
+    .container {
+      margin-top: -10vh;
+    }
+  }
+}
+
+/** --END HOME PAGE **/
+
+/** LOGIN PAGE **/
+
+main {
+  &#loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $bgLight;
+    height: 80vh;
+
+    .form-signin {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 25%;
+
+      & .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+
+        &:focus {
+          z-index: 2;
+        }
+      }
+
+      & input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      & input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+}
+
+/** --END LOGIN PAGE **/
+
+/** FOOTER **/
+
+footer {
+  background-color: $lightBlue;
+  min-height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-item: center;
+
+  & .container {
+    align-self: center;
+    height: 100%;
+  }
+}
+
+/** --END FOOTER**/
