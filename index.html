@@ -4,87 +4,58 @@
     <meta charset="UTF-8">
     <title>FastQuizz</title>
 
-    <link rel="stylesheet" href="css/bootstrap-grid.css"/>
-    <link rel="stylesheet" href="css/bootstrap-reboot.css"/>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <!--<link rel="stylesheet" href="css/bootstrap-grid.css"/>-->
+    <!--<link rel="stylesheet" href="css/bootstrap-reboot.css"/>-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/bootstrap.js"></script>
-
-
+    <!--<script src="js/bootstrap.bundle.js"></script>-->
 </head>
+
 <body>
-
-<body id="page-top">
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">FastQuizz</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">A propos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<div id="app">
-
-    <header class="bg-primary text-white">
-        <div class="container text-center">
-            <h1>{{ quizzList.title }}</h1>
-            <p class="lead">{{ quizzList.description }}</p>
-        </div>
-    </header>
-
-    <section id="about">
+<header>
+    <nav class="navbar navbar-expand-md navbar-light">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2>{{ quizzList.questions[indexQuestionInQuizzList].question }}</h2>
-                    <div class="question-responses-list">
-                        <div class="responses-list" v-for="(answers, index) in quizzList.questions[indexQuestionInQuizzList].answers">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="answerResponse" :id="'radio'+index" :value="answers.value">
-                                <label class="form-check-label" :for="'radio'+index">
-                                    {{answers.value }}
-                                </label>
-                            </div>
-                            <!--<a href="#" @click="takeUserResponse(response)">{{ response }}</a>-->
-                            <!--<a href="#" v-model="lastUserResponse">{{ response }}</a>-->
-                        </div>
-                    </div>
-
-                    <button @click="takeUserResponse(quizzList.id)" class="btn btn-primary btn-lg btn-block">Répondre</button>
-
-                </div>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Lgo.png" alt="FastQuizz logo" id="logoMenu">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseFastQuizzMenu"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapseFastQuizzMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Signup</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
-</div>
+    </nav>
+</header>
+<main role="main" id="mainPage">
+    <div class="container">
+        <h1>Participate to the students and teachers quizzes</h1>
+        <h4 class="subtitle mt-4">
+            FastQuizz is a easy way to create, share quizzes between teachers and students.<br />
+            Subscribe now to be able to make or respond to quizzes
+        </h4>
+
+        <button type="button" class="btn btn-lg bg-light-blue hover-lighten rounded-0 text-white mt-5">Subscribe now</button>
+    </div>
+</main>
 
 <!-- Footer -->
-<footer class="py-5 bg-dark">
+<footer>
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; FastQuizz 2019</p>
+        <p class="m-0 text-center text-white">&copy; 2019 Copyright - Fast Quizz Inc.</p>
     </div>
-    <!-- /.container -->
 </footer>
-
-
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
