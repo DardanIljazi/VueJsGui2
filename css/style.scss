@@ -177,7 +177,6 @@ main {
       }
 
       .title-description-container {
-        position: relative;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -185,6 +184,7 @@ main {
         flex-direction: column;
         align-content: center;
         height: 20vh;
+        margin-top: 4vh;
 
         .title {
           color: $darkGrey;
@@ -202,7 +202,6 @@ main {
 
       a {
         text-decoration: none;
-        position: absolute;
 
         .bottom-button {
           display: flex;
@@ -221,7 +220,7 @@ main {
           font-weight: 500;
 
           &:hover {
-            background-color: $darkBlue;
+            background-color: darken($darkGrey, 5%);
             cursor: pointer;
           }
         }

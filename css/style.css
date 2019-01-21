@@ -124,7 +124,6 @@ main#quizzListPage .quizz-box:hover .bottom-button {
   bottom: 0px;
 }
 main#quizzListPage .quizz-box .title-description-container {
-  position: relative;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -132,6 +131,7 @@ main#quizzListPage .quizz-box .title-description-container {
   flex-direction: column;
   align-content: center;
   height: 20vh;
+  margin-top: 4vh;
 }
 main#quizzListPage .quizz-box .title-description-container .title {
   color: #666666;
@@ -146,7 +146,6 @@ main#quizzListPage .quizz-box .title-description-container .description {
 }
 main#quizzListPage .quizz-box a {
   text-decoration: none;
-  position: absolute;
 }
 main#quizzListPage .quizz-box a .bottom-button {
   display: flex;
@@ -164,7 +163,7 @@ main#quizzListPage .quizz-box a .bottom-button {
   font-weight: 500;
 }
 main#quizzListPage .quizz-box a .bottom-button:hover {
-  background-color: #37A8F2;
+  background-color: #595959;
   cursor: pointer;
 }
 @media (max-width: 768px) {
