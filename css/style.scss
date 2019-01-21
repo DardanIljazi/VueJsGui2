@@ -4,6 +4,7 @@ $darkBlue: #37A8F2;
 $lightBlue: #37A8F2;
 $darkGrey: #666666;
 $lightGrey: #607D8B;
+$BrandBlue: #378CEF;
 
 /** GENERAL STYLE **/
 %basic-font-family {
@@ -39,11 +40,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.bg-light-blue {
-  background-color: $lightBlue;
+.bg-brandblue {
+  background-color: $BrandBlue;
 
   &.hover-lighten:hover {
-    background-color: lighten($lightBlue, 5%);
+    background-color: lighten($BrandBlue, 5%);
   }
 }
 
@@ -133,7 +134,7 @@ main {
 /** FOOTER **/
 
 footer {
-  background-color: $lightBlue;
+  background-color: $BrandBlue;
   min-height: 13vh;
   display: flex;
   justify-content: center;
