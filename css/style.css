@@ -1,3 +1,4 @@
+/** BOOTSTRAP grid: **/
 /** GENERAL STYLE **/
 html, body, * {
   font-family: Roboto, sans-serif;
@@ -13,6 +14,7 @@ html, body, * {
 
 html, body {
   box-sizing: border-box !important;
+  height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,6 +98,84 @@ main#loginPage .form-signin input[type=password] {
 }
 
 /** --END LOGIN PAGE **/
+/** QUIZZLIST PAGE **/
+main#quizzListPage {
+  padding-top: 10vh;
+  background-color: #FAFCFD;
+  min-height: 80vh;
+}
+main#quizzListPage .quizz-box {
+  padding-right: 0px;
+  padding-left: 0px;
+  border: 2px solid #666666;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+main#quizzListPage .quizz-box:hover {
+  background-color: #37A8F2;
+  border: 2px solid #37A8F2;
+}
+main#quizzListPage .quizz-box:hover .description, main#quizzListPage .quizz-box:hover .title {
+  color: white !important;
+}
+main#quizzListPage .quizz-box:hover .bottom-button {
+  bottom: 0px;
+}
+main#quizzListPage .quizz-box .title-description-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  height: 20vh;
+}
+main#quizzListPage .quizz-box .title-description-container .title {
+  color: #666666;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+main#quizzListPage .quizz-box .title-description-container .description {
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+}
+main#quizzListPage .quizz-box a {
+  text-decoration: none;
+  position: absolute;
+}
+main#quizzListPage .quizz-box a .bottom-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+  border: 0px;
+  position: relative;
+  bottom: -8vh;
+  background-color: #666666;
+  width: 100%;
+  height: 4vh;
+  font-weight: 500;
+}
+main#quizzListPage .quizz-box a .bottom-button:hover {
+  background-color: #37A8F2;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  main .container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+/** --END QUIZZLIST PAGE **/
 /** FOOTER **/
 footer {
   background-color: #37A8F2;
