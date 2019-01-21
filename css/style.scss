@@ -1,7 +1,7 @@
 $CustomColor: rgb(56, 135, 224);
 $bgLight: #FAFCFD;
-$darkBlue: #37A8F2;
 $lightBlue: #37A8F2;
+$darkBlue: darken(#37A8F2, 10%);
 $darkGrey: #666666;
 $lightGrey: #607D8B;
 
@@ -71,6 +71,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.bg-light-grey {
+  background-color: $lightGrey;
+
+  &.hover-lighten:hover {
+    background-color: lighten($lightGrey, 5%);
+  }
+}
+
+.bg-dark-grey {
+  background-color: $darkGrey;
+
+  &.hover-lighten:hover {
+    background-color: lighten($darkGrey, 5%);
+  }
+}
+
 /** --END OF GENERAL STYLE **/
 
 /** TOP PAGE **/
@@ -129,13 +145,13 @@ main {
         }
       }
 
-      & input[type="email"], & input[type="text"], & input[type="password"]:not(#inputPasswordCheck) {
+      & input[type="email"], & input[type="text"], & input[type="password"]:not(#inputPasswordConfirm) {
         margin-bottom: -1px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
       }
 
-      & input[type="password"]#inputPasswordCheck {
+      & input[type="password"]#inputPasswordConfirm {
         margin-bottom: 10px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
@@ -164,8 +180,8 @@ main {
       overflow: hidden;
 
       &:hover {
-        background-color: $darkBlue;
-        border: 2px solid $darkBlue;
+        background-color: $lightBlue;
+        border: 2px solid $lightBlue;
 
         & .description, & .title {
           color: white !important;
