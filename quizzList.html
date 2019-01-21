@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <!--<script src="js/bootstrap.bundle.js"></script>-->
 </head>
 
@@ -44,52 +45,52 @@
     <div class="container container-fluid">
         <div class="row flex-row flex-wrap">
 
-            <div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 mt-xs-3">
+            <div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 mt-xs-3" v-for="quizz in quizzes">
                 <div class="col-12 quizz-box">
                     <a href="#">
                         <div class="title-description-container">
-                            <h3 class="title">Quizz Title 1</h3>
-                            <h6 class="description">Description</h6>
+                            <h3 class="title">{{ quizz.title }}</h3>
+                            <h6 class="description">{{ quizz.description }}</h6>
                         </div>
                         <button type="button" class="bottom-button text-light text-center">Start</button>
                     </a>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 mt-xs-3">
-                <div class="col-12 quizz-box">
-                    <a href="#">
-                        <div class="title-description-container">
-                            <h3 class="title">Quizz Title 1</h3>
-                            <h6 class="description">Description</h6>
-                        </div>
-                        <button type="button" class="bottom-button text-light text-center">Start</button>
-                    </a>
-                </div>
-            </div>
+            <!--<div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 mt-xs-3">-->
+                <!--<div class="col-12 quizz-box">-->
+                    <!--<a href="#">-->
+                        <!--<div class="title-description-container">-->
+                            <!--<h3 class="title">Quizz Title 1</h3>-->
+                            <!--<h6 class="description">Description</h6>-->
+                        <!--</div>-->
+                        <!--<button type="button" class="bottom-button text-light text-center">Start</button>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
 
-            <div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 mt-xs-3">
-                <div class="col-12 quizz-box">
-                    <a href="#">
-                        <div class="title-description-container">
-                            <h3 class="title">Quizz Title 1</h3>
-                            <h6 class="description">Description</h6>
-                        </div>
-                        <button type="button" class="bottom-button text-light text-center">Start</button>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 ">
-                <div class="col-12 quizz-box">
-                    <a href="#">
-                        <div class="title-description-container">
-                            <h3 class="title">Quizz Title 1</h3>
-                            <h6 class="description">Description</h6>
-                        </div>
-                        <button type="button" class="bottom-button text-light text-center">Start</button>
-                    </a>
-                </div>
-            </div>
+            <!--<div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 mt-xs-3">-->
+                <!--<div class="col-12 quizz-box">-->
+                    <!--<a href="#">-->
+                        <!--<div class="title-description-container">-->
+                            <!--<h3 class="title">Quizz Title 1</h3>-->
+                            <!--<h6 class="description">Description</h6>-->
+                        <!--</div>-->
+                        <!--<button type="button" class="bottom-button text-light text-center">Start</button>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 ">-->
+                <!--<div class="col-12 quizz-box">-->
+                    <!--<a href="#">-->
+                        <!--<div class="title-description-container">-->
+                            <!--<h3 class="title">Quizz Title 1</h3>-->
+                            <!--<h6 class="description">Description</h6>-->
+                        <!--</div>-->
+                        <!--<button type="button" class="bottom-button text-light text-center">Start</button>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
     </div>
 </main>

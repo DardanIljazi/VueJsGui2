@@ -1,3 +1,11 @@
+// 3. Create the router instance and pass the `routes` option
+// You can pass in additional options here, but let's
+// keep it simple for now.
+const router = new VueRouter({
+
+});
+
+
 let app = new Vue({
     el: '#quizzListPage',
     data: {
@@ -6,7 +14,7 @@ let app = new Vue({
         indexQuestionInQuizzList: 0,
         quizzes: [
             {
-                "title": "Quizz GÃ©omÃ©trie",
+                "title": "Quizz Géométrie",
                 "image": "https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2018/03/01075158/p2.png",
                 "description": "Questions sur les formes et volumes",
                 "created_by": {
@@ -19,7 +27,7 @@ let app = new Vue({
             {
                 "title": "Quizz Web Bases",
                 "image": "http://managedsolution.com/wp-content/uploads/2015/12/web-development-managed-solution.jpg",
-                "description": "Questions de base sur le dÃ©veloppement web",
+                "description": "Questions de base sur le développement web",
                 "created_by": {
                     "id": "5c3ef507ae97ab0004daad7c",
                     "username": "amr"
@@ -172,6 +180,7 @@ let app = new Vue({
         // Here will come the api request
         // axios.get('awa-quizz.herokuapp.com/api/quizzes')
         //     .then(response => (this.info = response))
+
     },
     methods: {
         takeUserResponse: function (id) {
