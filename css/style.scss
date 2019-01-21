@@ -129,13 +129,13 @@ main {
         }
       }
 
-      & input[type="email"] {
+      & input[type="email"], & input[type="text"], & input[type="password"]:not(#inputPasswordCheck) {
         margin-bottom: -1px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
       }
 
-      & input[type="password"] {
+      & input[type="password"]#inputPasswordCheck {
         margin-bottom: 10px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
