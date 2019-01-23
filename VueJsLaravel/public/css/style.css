@@ -210,9 +210,8 @@ footer {
   min-height: 13vh;
   display: flex;
   justify-content: center;
-  align-item: center;
 }
-footer .container {
+align-conten footer .container {
   align-self: center;
   height: 100%;
 }
