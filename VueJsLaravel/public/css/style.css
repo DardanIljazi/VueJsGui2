@@ -70,6 +70,13 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle, h6.subtitle {
   background-color: #737373;
 }
 
+.bg-brandblue {
+  background-color: #378CEF;
+}
+.bg-brandblue.hover-lighten:hover {
+  background-color: #4f9af1;
+}
+
 /** --END OF GENERAL STYLE **/
 /** TOP PAGE **/
 #logoMenu {
@@ -206,7 +213,7 @@ main#quizzListPage .quizz-box a .bottom-button:hover {
 /** --END QUIZZLIST PAGE **/
 /** FOOTER **/
 footer {
-  background-color: #37A8F2;
+  background-color: #378CEF;
   min-height: 13vh;
   display: flex;
   justify-content: center;

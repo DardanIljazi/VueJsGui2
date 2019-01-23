@@ -16,7 +16,7 @@
                     <input type="checkbox" value="remember-me"> Remember me
                 </label>
             </div>
-            <button class="btn btn-lg bg-light-blue hover-lighten rounded-0 text-white mt-2 btn-block" type="submit">
+            <button class="btn btn-lg bg-brandblue hover-lighten rounded-0 text-white mt-2 btn-block" type="submit">
                 Sign in
             </button>
             <p class="mt-5 mb-3 text-muted">&copy; 2019 Copyright - Fast Quizz Inc.</p>

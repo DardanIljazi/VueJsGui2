@@ -1,4 +1,4 @@
-@import "variables_BP";
+@import "variables";
 @import "bootstrap_modif";
 
 /** BOOTSTRAP grid: **/
@@ -89,6 +89,14 @@ h1, h2, h3, h4, h5, h6 {
 
     &.hover-lighten:hover {
         background-color: lighten($darkGrey, 5%);
+    }
+}
+
+.bg-brandblue {
+    background-color: $brandBlue;
+
+    &.hover-lighten:hover {
+        background-color: lighten($brandBlue, 5%);
     }
 }
 
@@ -266,7 +274,7 @@ main {
 /** FOOTER **/
 
 footer {
-    background-color: $lightBlue;
+    background-color: $brandBlue;
     min-height: 13vh;
     display: flex;
     justify-content: center;
