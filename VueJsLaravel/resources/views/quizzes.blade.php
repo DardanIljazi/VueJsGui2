@@ -18,7 +18,6 @@
 
         <div class="container container-fluid">
             <div class="row flex-row flex-wrap">
-
                 <div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 mt-xs-3 mt-3" v-for="quizz in quizzes">
                     <div class=" quizz-box">
                         <a :href="'quizzes/'+quizz.id">

@@ -1,14 +1,7 @@
-// 3. Create the router instance and pass the `routes` option
-// You can pass in additional options here, but let's
-// keep it simple for now.
-const router = new VueRouter({
-
-});
-
-
-let app = new Vue({
+let quizzList = new Vue({
     el: '#quizzListPage',
     data: {
+        questionId: 0,
         lastUserResponse: [],
         listOfUsersResponse: [],
         indexQuestionInQuizzList: 0,
@@ -22,7 +15,7 @@ let app = new Vue({
                     "username": "amr"
                 },
                 "number_participants": 0,
-                "id": "5c3f45e155a8180004b47aea"
+                "id": "5c4592fb28a39b00045f1945"
             },
             {
                 "title": "Quizz Web Bases",
@@ -33,7 +26,7 @@ let app = new Vue({
                     "username": "amr"
                 },
                 "number_participants": 2,
-                "id": "5c4592fb28a39b00045f1945"
+                "id": "5c4592fb28asda39b00045f1945"
             },
             {
                 "title": "Quizz Géométrie",
@@ -44,7 +37,7 @@ let app = new Vue({
                     "username": "amr"
                 },
                 "number_participants": 0,
-                "id": "5c3f45e155a8180004b47aea"
+                "id": "5c3f45e155a8180004b47aeeasda"
             },
             {
                 "title": "Quizz Web Bases",
@@ -55,7 +48,7 @@ let app = new Vue({
                     "username": "amr"
                 },
                 "number_participants": 2,
-                "id": "5c4592fb28a39b00045f1945"
+                "id": "5c4592fb2asd8a39b00045f1945"
             },
             {
                 "title": "Quizz Géométrie",
@@ -66,7 +59,7 @@ let app = new Vue({
                     "username": "amr"
                 },
                 "number_participants": 0,
-                "id": "5c3f45e155a8180004b47aea"
+                "id": "5c3f45e155a8180004asdb47aea"
             },
             {
                 "title": "Quizz Web Bases",
@@ -77,7 +70,7 @@ let app = new Vue({
                     "username": "amr"
                 },
                 "number_participants": 2,
-                "id": "5c4592fb28a39b00045f1945"
+                "id": "5c4592asdfb28a39b00045f1945"
             },
             {
                 "title": "Quizz Géométrie",
@@ -88,7 +81,7 @@ let app = new Vue({
                     "username": "amr"
                 },
                 "number_participants": 0,
-                "id": "5c3f45e155a8180004b47aea"
+                "id": "5c3f45e155a818asd0004b47aea"
             },
             {
                 "title": "Quizz Web Bases",
@@ -99,7 +92,7 @@ let app = new Vue({
                     "username": "amr"
                 },
                 "number_participants": 2,
-                "id": "5c4592fb28a39b00045f1945"
+                "id": "5c4592fb28aasd39b00045f1945"
             },
             {
                 "title": "Quizz Géométrie",
@@ -110,7 +103,7 @@ let app = new Vue({
                     "username": "amr"
                 },
                 "number_participants": 0,
-                "id": "5c3f45e155a8180004b47aea"
+                "id": "5c3f45e155aasd8180004b47aea"
             },
             {
                 "title": "Quizz Web Bases",
@@ -121,7 +114,7 @@ let app = new Vue({
                     "username": "amr"
                 },
                 "number_participants": 2,
-                "id": "5c4592fb28a39b00045f1945"
+                "id": "5c4592fasdb28a39b00045f1945"
             },
             {
                 "title": "Quizz Géométrie",
@@ -132,7 +125,7 @@ let app = new Vue({
                     "username": "amr"
                 },
                 "number_participants": 0,
-                "id": "5c3f45e155a8180004b47aea"
+                "id": "5c3f45e155aasd8180004b47aea"
             },
             {
                 "title": "Quizz Web Bases",
@@ -143,7 +136,7 @@ let app = new Vue({
                     "username": "amr"
                 },
                 "number_participants": 2,
-                "id": "5c4592fb28a39b00045f1945"
+                "id": "5c4592fasdb28a39b00045f1945"
             }
         ],
 
@@ -287,7 +280,7 @@ let app = new Vue({
         ]
     },
     mounted: function(){
-        this.$r
+        console.log("mounted");
     },
     methods: {
         takeUserResponse: function (id) {
@@ -298,13 +291,7 @@ let app = new Vue({
             console.log(this.listOfUsersResponse[this.listOfUsersResponse.length - 1].id + "," + this.listOfUsersResponse[this.listOfUsersResponse.length - 1].response);
             this.indexQuestionInQuizzList += 1;
             console.log(this.indexQuestionInQuizzList);
-        }//,
-         // loadQuestionAndResponsesFor: function(index){
-         //
-         // },
-         // mounted: function() {
-         //     this.loadQuestionAndResponsesFor(this.indexQuestionInQuizzList);
-         // },
-
+        }
     }
-})
+});
+

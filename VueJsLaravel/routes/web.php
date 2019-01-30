@@ -25,10 +25,14 @@ Route::get('/signup', function () {
 });
 
 Route::get('/quizzes', function () {
-    return view('quizzes')->with(["menus" => ["Results" => "#"]]);;
+    return view('quizzes')->with(["menus" => ["Results" => "results"]]);;
 });
 
 Route::get('/quizzes/{id}', function ($id) {
     return view('quizzes_questions')->with(["menus" => ["End Quiz" => "$id/finish", "Logout" => "#"], "id" => $id]);
+});
+
+Route::get('/results', function () {
+    return view('quizzes_results')->with(["menus" => ["Logout" => "#"]]);
 });
 

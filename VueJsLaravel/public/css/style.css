@@ -12,7 +12,7 @@ html, body, * {
   font-family: Roboto, sans-serif;
 }
 
-main#quizzListPage, main#loginPage, main#mainPage {
+main#quizzListPage:not(.questions), main#loginPage, main#mainPage {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,11 +136,11 @@ main#loginPage .form-signin input[type=password]#inputPasswordConfirm {
 
 /** --END LOGIN PAGE **/
 /** QUIZZLIST PAGE **/
-main#quizzListPage {
+main#quizzListPage:not(.questions) {
   padding-top: 5vh;
   margin-bottom: 5vh;
 }
-main#quizzListPage .quizz-box {
+main#quizzListPage:not(.questions) .quizz-box {
   padding-right: 0;
   padding-left: 0;
   border: 2px solid #666666;
@@ -149,17 +149,17 @@ main#quizzListPage .quizz-box {
   justify-content: space-between;
   overflow: hidden;
 }
-main#quizzListPage .quizz-box:hover {
+main#quizzListPage:not(.questions) .quizz-box:hover {
   background-color: #37A8F2;
   border: 2px solid #37A8F2;
 }
-main#quizzListPage .quizz-box:hover .description, main#quizzListPage .quizz-box:hover .title {
+main#quizzListPage:not(.questions) .quizz-box:hover .description, main#quizzListPage:not(.questions) .quizz-box:hover .title {
   color: white !important;
 }
-main#quizzListPage .quizz-box:hover .bottom-button {
+main#quizzListPage:not(.questions) .quizz-box:hover .bottom-button {
   bottom: 0px;
 }
-main#quizzListPage .quizz-box .title-description-container {
+main#quizzListPage:not(.questions) .quizz-box .title-description-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,21 +168,21 @@ main#quizzListPage .quizz-box .title-description-container {
   height: 20vh;
   margin-top: 4vh;
 }
-main#quizzListPage .quizz-box .title-description-container .title {
+main#quizzListPage:not(.questions) .quizz-box .title-description-container .title {
   color: #666666;
   width: 100%;
   text-align: center;
   font-weight: 500;
 }
-main#quizzListPage .quizz-box .title-description-container .description {
+main#quizzListPage:not(.questions) .quizz-box .title-description-container .description {
   width: 100%;
   text-align: center;
   font-weight: 300;
 }
-main#quizzListPage .quizz-box a {
+main#quizzListPage:not(.questions) .quizz-box a {
   text-decoration: none;
 }
-main#quizzListPage .quizz-box a .bottom-button {
+main#quizzListPage:not(.questions) .quizz-box a .bottom-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,7 +197,7 @@ main#quizzListPage .quizz-box a .bottom-button {
   height: 4vh;
   font-weight: 500;
 }
-main#quizzListPage .quizz-box a .bottom-button:hover {
+main#quizzListPage:not(.questions) .quizz-box a .bottom-button:hover {
   background-color: #595959;
   cursor: pointer;
 }
