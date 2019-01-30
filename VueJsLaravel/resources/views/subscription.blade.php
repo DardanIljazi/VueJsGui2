@@ -26,7 +26,7 @@
             <label for="inputPasswordConfirm" class="sr-only">Re-enter password</label>
             <input type="password" id="inputPasswordConfirm" class="form-control" placeholder="Re-enter password" required>
 
-            <button class="btn btn-lg bg-light-blue hover-lighten rounded-0 text-white mt-2 btn-block" type="submit">
+            <button class="btn btn-lg bg-brandblue hover-lighten rounded-0 text-white mt-2 btn-block" type="submit">
                 Register
             </button>
             <p class="mt-5 mb-3 text-muted">&copy; 2019 Copyright - Fast Quizz Inc.</p>

@@ -20,8 +20,8 @@
             <div class="row flex-row flex-wrap">
 
                 <div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 mt-xs-3 mt-3" v-for="quizz in quizzes">
-                    <div class="col-12 quizz-box">
-                        <a href="#">
+                    <div class=" quizz-box">
+                        <a :href="'quizzes/'+quizz.id">
                             <div class="title-description-container">
                                 <h3 class="title">@{{ quizz.title }}</h3>
                                 <h6 class="description">@{{ quizz.description }}</h6>
@@ -30,7 +30,6 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>

@@ -286,11 +286,8 @@ let app = new Vue({
             }
         ]
     },
-    mounted: {
-        // Here will come the api request
-        // axios.get('awa-quizz.herokuapp.com/api/quizzes')
-        //     .then(response => (this.info = response))
-
+    mounted: function(){
+        this.$r
     },
     methods: {
         takeUserResponse: function (id) {

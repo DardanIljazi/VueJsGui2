@@ -187,8 +187,8 @@ main {
         margin-bottom: 5vh;
 
         .quizz-box {
-            padding-right: 0px;
-            padding-left: 0px;
+            padding-right: 0;
+            padding-left: 0;
             border: 2px solid $darkGrey;
             display: flex;
             flex-direction: column;
@@ -209,7 +209,6 @@ main {
             }
 
             .title-description-container {
-                height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -242,7 +241,7 @@ main {
                     align-content: center;
                     padding: 0;
                     margin: 0;
-                    border: 0px;
+                    border: 0;
                     position: relative;
                     bottom: -8vh;
 
@@ -263,13 +262,77 @@ main {
     @media (max-width: #{map-get($grid-breakpoints, md)}) {
         .container {
             width: 95%;
-            padding-right: 0px;
-            padding-left: 0px;
+            padding-right: 0;
+            padding-left: 0;
         }
     }
 }
 
 /** --END QUIZZLIST PAGE **/
+
+
+/** QUIZZ_QUESTION PAGE **/
+
+
+.quizzContainer{
+
+    .quizzTitle{
+        font-size: 24px;
+        color: $darkGrey;
+
+        @media (max-width: #{map-get($grid-breakpoints, md)}) {
+            font-size: 24px;
+        }
+
+        @media (max-width: #{map-get($grid-breakpoints, sm)}) {
+            font-size: 16px;
+        }
+
+        //@media (max-width: #{map-get($grid-breakpoints, lg)}) {
+        //    width: 55%;
+        //}
+    }
+
+    .quizzQuestion{
+        font-size: 32px;
+        color: $lightGrey;
+
+        @media (max-width: #{map-get($grid-breakpoints, md)}) {
+            font-size: 28px;
+        }
+
+        @media (max-width: #{map-get($grid-breakpoints, sm)}) {
+            font-size: 26px;
+        }
+    }
+
+    .quizzImage{
+        img{
+            max-height: 50vh;
+            max-width: 80vw;
+            background-size: cover;
+        }
+    }
+
+    .responsesContainer{
+        .btn{
+            padding: 20px !important;
+
+
+            @media (min-width: #{map-get($grid-breakpoints, md)}) {
+                width: 60%;
+            }
+
+            @media (max-width: #{map-get($grid-breakpoints, sm)}) {
+                width: 90%;
+            }
+        }
+    }
+}
+
+
+/** --END QUIZZ_QUESTION PAGE **/
+
 
 /** FOOTER **/
 
