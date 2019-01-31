@@ -25,12 +25,17 @@ Route::get('/signup', function () {
 });
 
 Route::get('/quizzes', function () {
-    return view('quizzes')->with(["menus" => ["Results" => "results"]]);;
+    return view('quizzes')->with(["menus" => []]);;
 });
 
 Route::get('/quizzes/{id}', function ($id) {
-    return view('quizzes_questions')->with(["menus" => ["End Quiz" => "$id/finish", "Logout" => "#"], "id" => $id]);
+    return view('quizzes_questions')->with(["menus" => [], "id" => $id]);
 });
+
+Route::get('/quizzes/{id}/finished', function ($id) {
+    return view('quizzes_results')->with(["menus" => ["Return to home page" => "/"], "id" => $id]);
+});
+
 
 Route::get('/results', function () {
     return view('quizzes_results')->with(["menus" => ["Logout" => "#"]]);

@@ -6,7 +6,10 @@
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(15, 146, 231, 0.99)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/** BOOTSTRAP grid: **/
+/** BOOTSTRAP GRID: **/
+/** --END OF BOOTSTRAP GRID **/
+/** GENERAL MIXIN **/
+/** --END OF GENERAL MIXIN **/
 /** GENERAL STYLE **/
 html, body, * {
   font-family: Roboto, sans-serif;
@@ -29,7 +32,6 @@ main#quizzListPage:not(.questions), main#loginPage, main#mainPage {
 }
 
 html, body {
-  box-sizing: border-box !important;
   height: 100%;
 }
 
@@ -211,6 +213,12 @@ main#quizzListPage:not(.questions) .quizz-box a .bottom-button:hover {
 
 /** --END QUIZZLIST PAGE **/
 /** QUIZZ_QUESTION PAGE **/
+.quizzContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
 .quizzContainer .quizzTitle {
   font-size: 24px;
   color: #666666;
@@ -223,11 +231,19 @@ main#quizzListPage:not(.questions) .quizz-box a .bottom-button:hover {
 @media (max-width: 576px) {
   .quizzContainer .quizzTitle {
     font-size: 16px;
+    text-align: center;
+    margin-left: 0 !important;
   }
 }
 .quizzContainer .quizzQuestion {
-  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
   color: #607D8B;
+  min-height: 40vh;
+  width: 50%;
+  font-size: 32px;
 }
 @media (max-width: 768px) {
   .quizzContainer .quizzQuestion {
@@ -252,9 +268,9 @@ main#quizzListPage:not(.questions) .quizz-box a .bottom-button:hover {
     width: 60%;
   }
 }
-@media (max-width: 576px) {
+@media (min-width: 0) and (max-width: 576px) {
   .quizzContainer .responsesContainer .btn {
-    width: 90%;
+    width: 80%;
   }
 }
 

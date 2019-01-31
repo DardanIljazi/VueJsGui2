@@ -1,7 +1,7 @@
 @import "variables";
 @import "bootstrap_modif";
 
-/** BOOTSTRAP grid: **/
+/** BOOTSTRAP GRID: **/
 
 $grid-breakpoints: (
     // Extra small screen / phone
@@ -16,7 +16,22 @@ $grid-breakpoints: (
     xl: 1200px
 );
 
+/** --END OF BOOTSTRAP GRID **/
+
+/** GENERAL MIXIN **/
+
+@mixin transition($duration: 125ms, $type: ease-in-out) {
+    -webkit-transition: all $duration $type !important;
+    -moz-transition: all $duration $type !important;
+    -ms-transition: all $duration $type !important;
+    -o-transition: all $duration $type !important;
+    transition: all $duration $type !important;
+}
+
+/** --END OF GENERAL MIXIN **/
+
 /** GENERAL STYLE **/
+
 %basic-font-family {
     font-family: Roboto, sans-serif;
 }
@@ -29,15 +44,6 @@ $grid-breakpoints: (
     min-height: 80vh;
 }
 
-@mixin transition($duration: 125ms, $type: ease-in-out) {
-    -webkit-transition: all $duration $type !important;
-    -moz-transition: all $duration $type !important;
-    -ms-transition: all $duration $type !important;
-    -o-transition: all $duration $type !important;
-    transition: all $duration $type !important;
-
-}
-
 * {
     @extend %basic-font-family;
     @include transition();
@@ -46,7 +52,7 @@ $grid-breakpoints: (
 
 html, body {
     @extend %basic-font-family;
-    box-sizing: border-box !important;
+    //box-sizing: border-box !important;
     height: 100%;
 }
 
@@ -275,6 +281,10 @@ main {
 
 
 .quizzContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 
     .quizzTitle{
         font-size: 24px;
@@ -286,16 +296,20 @@ main {
 
         @media (max-width: #{map-get($grid-breakpoints, sm)}) {
             font-size: 16px;
+            text-align: center;
+            margin-left: 0 !important;
         }
-
-        //@media (max-width: #{map-get($grid-breakpoints, lg)}) {
-        //    width: 55%;
-        //}
     }
 
     .quizzQuestion{
-        font-size: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
         color: $lightGrey;
+        min-height: 30vh;
+        width: 50%;
+        font-size: 32px;
 
         @media (max-width: #{map-get($grid-breakpoints, md)}) {
             font-size: 28px;
@@ -318,15 +332,15 @@ main {
         .btn{
             padding: 20px !important;
 
-
             @media (min-width: #{map-get($grid-breakpoints, md)}) {
                 width: 60%;
             }
 
-            @media (max-width: #{map-get($grid-breakpoints, sm)}) {
-                width: 90%;
+            @media (min-width: #{map-get($grid-breakpoints, xs)}) and (max-width: #{map-get($grid-breakpoints, sm)}) {
+                width: 80%;
             }
         }
+
     }
 }
 

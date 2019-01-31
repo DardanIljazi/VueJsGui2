@@ -4,7 +4,9 @@ let quizzList = new Vue({
         questionId: 0,
         lastUserResponse: [],
         listOfUsersResponse: [],
-        indexQuestionInQuizzList: 0,
+        actualResponses: {},
+        lastQuestionId: "",
+
         quizzes: [
             {
                 "title": "Quizz Géométrie",
@@ -280,17 +282,20 @@ let quizzList = new Vue({
         ]
     },
     mounted: function(){
-        console.log("mounted");
+
     },
     methods: {
-        takeUserResponse: function (id) {
-            console.log("id");
-            console.log(id);
-            this.listOfUsersResponse.push({"id": id, "response": this.lastUserResponse});
-            console.log("listOfUserResponse[id,response]: ");
-            console.log(this.listOfUsersResponse[this.listOfUsersResponse.length - 1].id + "," + this.listOfUsersResponse[this.listOfUsersResponse.length - 1].response);
-            this.indexQuestionInQuizzList += 1;
-            console.log(this.indexQuestionInQuizzList);
+        takeUserResponse: function (answer, question) {
+            console.log(JSON.stringify(question[0]));
+            this.actualResponses["responses"] = {"question":  question.question, "isGoodResponse": (answer["value"] === "true")};
+
+            if(this.questionId+1 > question.length-1) {
+                // Let's redirect now
+                window.location.href = "/test"
+            }else {
+                this.questionId++;
+            }
+
         }
     }
 });
