@@ -28,13 +28,17 @@ Route::get('/quizzes', function () {
     return view('quizzes')->with(["menus" => []]);;
 });
 
+Route::get('/quizzes/finished/{quizzTitle}/{userScore}/{numberOfQuestions}', function ($quizzTitle, $userScore, $numberOfQuestion) {
+    return view('quizzes_results')->with(["quizzTitle" => $quizzTitle, "userScore" => $userScore, "numberOfQuestion" => $numberOfQuestion]);
+});
+
 Route::get('/quizzes/{id}', function ($id) {
     return view('quizzes_questions')->with(["menus" => [], "id" => $id]);
 });
 
-Route::get('/quizzes/{id}/finished', function ($id) {
-    return view('quizzes_results')->with(["menus" => ["Return to home page" => "/"], "id" => $id]);
-});
+//Route::get('/quizzes/{id}/finished', function ($id) {
+//    return view('quizzes_results')->with(["menus" => ["Return to home page" => "/"], "id" => $id]);
+//});
 
 
 Route::get('/results', function () {

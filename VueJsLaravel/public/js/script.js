@@ -6,6 +6,7 @@ let quizzList = new Vue({
         listOfUsersResponse: [],
         actualResponses: {},
         lastQuestionId: "",
+        numberOfGoodResponses: 0,
 
         quizzes: [
             {
@@ -285,13 +286,27 @@ let quizzList = new Vue({
 
     },
     methods: {
-        takeUserResponse: function (answer, question) {
+        takeUserResponse: function (answer, question, id) {
             console.log(JSON.stringify(question[0]));
+            let trueResponse = false;
+            if(answer["value"] === "true"){
+                trueResponse = true;
+                this.numberOfGoodResponses++;
+            }
+
             this.actualResponses["responses"] = {"question":  question.question, "isGoodResponse": (answer["value"] === "true")};
 
             if(this.questionId+1 > question.length-1) {
                 // Let's redirect now
-                window.location.href = "/test"
+                console.log(id);
+                this.ajaxRequest = true;
+                console.log($('.quizzTitle').text());
+                // Route::get('/quizzes/finished/{quizzTitle}/{userScore}/{numberOfQuestions}', function ($quizzTitle, $userScore, $numberOfQuestion) {
+                $.get( "/quizzes/finished/" + $('.quizzTitle').text() + "/" + this.numberOfGoodResponses + "/" + question.length, function( data ) {
+                    $("#quizzListPage").empty();
+                    $("#quizzListPage").prepend(data);
+                });
+
             }else {
                 this.questionId++;
             }

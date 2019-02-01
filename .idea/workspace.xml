@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc8d56c8-12d9-40bb-86a8-e4481d9c0dd0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/js/jquery.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/js/script.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueJsLaravel/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_questions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_questions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueJsLaravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,23 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="288" column="50" selection-start-line="288" selection-start-column="50" selection-end-line="288" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VueJsLaravel/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="e#7#389#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="217">
+              <caret line="173" column="6" lean-forward="true" selection-start-line="173" selection-start-column="6" selection-end-line="173" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -62,26 +51,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_questions.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="154" selection-start-line="28" selection-start-column="154" selection-end-line="28" selection-end-column="154" />
+            <state relative-caret-position="414">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/css/style.scss">
+        <entry file="file://$PROJECT_DIR$/VueJsLaravel/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="275" lean-forward="true" selection-start-line="275" selection-end-line="275" />
+            <state relative-caret-position="338">
+              <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-end-line="31" />
+              <folding>
+                <element signature="e#7#389#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="59" selection-start-column="59" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/layouts/app.blade.php">
+        <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="92" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
+            <state relative-caret-position="299">
+              <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -99,7 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>main</find>
       <find>main {</find>
       <find>mainpage</find>
       <find>quizz</find>
@@ -129,6 +132,7 @@
       <find>quizzQuestion</find>
       <find>answe</find>
       <find>actualGoo</find>
+      <find>env</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,14 +157,15 @@
         <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/subscription.blade.php" />
         <option value="$PROJECT_DIR$/VueJsLaravel/webpack.mix.js" />
-        <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes.blade.php" />
         <option value="$PROJECT_DIR$/VueJsLaravel/public/css/style.scss" />
         <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/VueJsLaravel/routes/web.php" />
+        <option value="$PROJECT_DIR$/VueJsLaravel/.env" />
         <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_questions.blade.php" />
+        <option value="$PROJECT_DIR$/VueJsLaravel/routes/web.php" />
         <option value="$PROJECT_DIR$/VueJsLaravel/public/js/script.js" />
+        <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php" />
       </list>
     </option>
   </component>
@@ -256,16 +261,17 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2439" />
-    <option name="y" value="-8" />
-    <option name="width" value="1226" />
-    <option name="height" value="911" />
+    <option name="x" value="399" />
+    <option name="y" value="157" />
+    <option name="width" value="1351" />
+    <option name="height" value="910" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,7 +295,7 @@
               <item name="VueJsGui2" type="462c0819:PsiDirectoryNode" />
               <item name="VueJsLaravel" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VueJsGui2" type="b2602c69:ProjectViewProjectNode" />
@@ -304,11 +310,16 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="VueJsGui2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VueJsGui2" type="462c0819:PsiDirectoryNode" />
+              <item name="VueJsLaravel" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,18 +380,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65742000" />
+    <option name="totallyTimeSpent" value="74557000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1974" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19845645" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19254279" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32896176" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3281412" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32786885" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -395,6 +406,27 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" side_tool="true" weight="0.3296582" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19254279" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32896176" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32786885" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32896176" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32896176" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" side_tool="true" weight="0.3296582" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -426,78 +458,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3043">
-          <caret line="179" column="16" selection-start-line="179" selection-start-column="16" selection-end-line="179" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/_bootstrap_modif.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueJsLaravel/storage/framework/views/e0001d189d39f83b7a508177143a297734ed4d1f.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="75" lean-forward="true" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="5" column="76943" selection-start-line="5" selection-start-column="76924" selection-end-line="5" selection-end-column="76943" />
-          <folding>
-            <element signature="e#25977#26211#2" expanded="true" />
-            <element signature="e#26816#26969#1" expanded="true" />
-            <element signature="e#27009#27243#1" expanded="true" />
-            <element signature="e#30336#30612#2" expanded="true" />
-            <element signature="e#31245#31398#1" expanded="true" />
-            <element signature="e#31438#31714#1" expanded="true" />
-            <element signature="e#61310#61497#2" expanded="true" />
-            <element signature="e#61726#61862#2" expanded="true" />
-            <element signature="e#62265#62398#2" expanded="true" />
-            <element signature="e#63869#64022#1" expanded="true" />
-            <element signature="e#76076#76306#2" expanded="true" />
-            <element signature="e#77173#77409#2" expanded="true" />
-            <element signature="e#104435#104612#2" expanded="true" />
-            <element signature="e#104658#104835#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quizzList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subscription.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="59" column="81" selection-start-line="59" selection-start-column="81" selection-end-line="59" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/storage/framework/views/e0001d189d39f83b7a508177143a297734ed4d1f.php" />
     <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/css/_variables_BP.scss" />
     <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -581,23 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VueJsLaravel/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="e#1216#1222#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js" />
     <entry file="file://$PROJECT_DIR$/quizzResult.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -627,27 +571,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/_bootstrap_modif.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="5" column="76943" selection-start-line="5" selection-start-column="76943" selection-end-line="5" selection-end-column="76943" />
+          <folding>
+            <element signature="e#25977#26211#2" expanded="true" />
+            <element signature="e#26816#26969#1" expanded="true" />
+            <element signature="e#27009#27243#1" expanded="true" />
+            <element signature="e#30336#30612#2" expanded="true" />
+            <element signature="e#31245#31398#1" expanded="true" />
+            <element signature="e#31438#31714#1" expanded="true" />
+            <element signature="e#61310#61497#2" expanded="true" />
+            <element signature="e#61726#61862#2" expanded="true" />
+            <element signature="e#62265#62398#2" expanded="true" />
+            <element signature="e#63869#64022#1" expanded="true" />
+            <element signature="e#76076#76306#2" expanded="true" />
+            <element signature="e#77173#77409#2" expanded="true" />
+            <element signature="e#104435#104612#2" expanded="true" />
+            <element signature="e#104658#104835#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quizzList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subscription.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="59" column="81" selection-start-line="59" selection-start-column="81" selection-end-line="59" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="173" column="6" lean-forward="true" selection-start-line="173" selection-start-column="6" selection-end-line="173" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_questions.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/VueJsLaravel/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="338">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-end-line="31" />
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_questions.blade.php">
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="154" selection-start-line="28" selection-start-column="154" selection-end-line="28" selection-end-column="154" />
+        <state relative-caret-position="299">
+          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/js/script.js">
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="288" column="50" selection-start-line="288" selection-start-column="50" selection-end-line="288" selection-end-column="50" />
+        <state>
+          <caret column="59" selection-start-column="59" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

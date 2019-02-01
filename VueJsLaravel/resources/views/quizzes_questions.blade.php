@@ -26,7 +26,7 @@
                                 <div class="row">
                                     <div class="col-md col-sm  response-button text-center mt-3" v-for="answer in question.questions[questionId].answers">
 
-                                        <div class="btn btn-primary btn-lg bg-brandblue rounded-0" v-on:click="takeUserResponse(answer, question.questions)">
+                                        <div class="btn btn-primary btn-lg bg-brandblue rounded-0" v-on:click="takeUserResponse(answer, question.questions, '{{ $id }}')">
                                             @{{ answer.name }}
                                         </div>
                                     </div>
