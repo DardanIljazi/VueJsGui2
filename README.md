@@ -23,7 +23,11 @@ composer install
 npm i
 ```
 
-### III. Set up your application key
+### III. Set up .env and database
+When the dependencies are installed you must duplicate the ``.env.example`` file and rename it to ``.env``.
+
+
+### IV. Set up your application key
 
 Finally, for laravel to work properly, you must generate the application key.
 
@@ -33,14 +37,14 @@ cd /path/to/your/local/clone/of/VueJsGui2
 php artisan key:generate
 ```
 
-### IV. Launch the web server
+### V. Launch the web server
 
 ```bash
 php artisan serve
 ```
 
-### V. Access the webpage
+### VI. Access the webpage
 
 [Access localhost:8000](localhost:8000) By Default (has to be change to another Port if already Used)
 
-### VI. Enjoy!
+### VII. Enjoy!
