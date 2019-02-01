@@ -3,20 +3,16 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/VueJsLaravel/public/js/bootstrap.bundle.min.js" />
-        <item url="file://$PROJECT_DIR$/VueJsLaravel/public/js/bootstrap.bundle.min.min.js" />
         <item url="file://$PROJECT_DIR$/VueJsLaravel/public/js/bootstrap.min.js" />
+        <item url="file://$PROJECT_DIR$/VueJsLaravel/public/js/jquery.min.js" />
         <item url="file://$PROJECT_DIR$/VueJsLaravel/public/js/script.min.js" />
-        <item url="file://$PROJECT_DIR$/VueJsLaravel/webpack.mix.min.js" />
-        <item url="file://$PROJECT_DIR$/VueJsLaravel/webpack.mix.min.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/VueJsLaravel/public/js/bootstrap.bundle.min.js" />
-      <root url="file://$PROJECT_DIR$/VueJsLaravel/public/js/bootstrap.bundle.min.min.js" />
       <root url="file://$PROJECT_DIR$/VueJsLaravel/public/js/bootstrap.min.js" />
+      <root url="file://$PROJECT_DIR$/VueJsLaravel/public/js/jquery.min.js" />
       <root url="file://$PROJECT_DIR$/VueJsLaravel/public/js/script.min.js" />
-      <root url="file://$PROJECT_DIR$/VueJsLaravel/webpack.mix.min.js" />
-      <root url="file://$PROJECT_DIR$/VueJsLaravel/webpack.mix.min.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

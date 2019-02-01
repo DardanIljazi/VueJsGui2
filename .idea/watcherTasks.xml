@@ -3,9 +3,6 @@
   <component name="ProjectTasksOptions">
     <enabled-global>
       <option value="Sass" />
-      <option value="SCSS" />
-      <option value="YUI Compressor CSS" />
-      <option value="YUI Compressor JS" />
     </enabled-global>
   </component>
 </project>
