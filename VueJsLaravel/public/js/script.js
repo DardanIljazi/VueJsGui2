@@ -12,9 +12,10 @@ $(function () {
             quizzes: {},
             quizzesQuestions: {},
             quizzToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Imd1ZXN0IiwicGFzc3dvcmQiOiIkcGJrZGYyLXNoYTI1NiQyMDAwMCRjNjRWd3RnN0IuQThKeVJrN1AzL1h3JG9BRDloUnVEQTVkWVpKR1Y2cDNpdDBzYVFqdlFBemFZbi9wNW1kSGRDbDQifQ.P-KfTO8nq5oQNC_bIAY5VKOeNLyNbGE-gGrf0oIKQjc',
+            actualHtmlPage: null
         },
         beforeCreate: function () {
-            $('body').prepend('');
+
         },
         created: function () {
             this.loading = true;
@@ -33,6 +34,7 @@ $(function () {
                 }).then((response) => {
 
                     this.quizzesQuestions = response;
+                    animateFromRightToOrigin($('.quizzContainer'), 9999);
                 });
             }
 
@@ -82,16 +84,28 @@ $(function () {
     });
 
     $('body').on('click', 'a.linktopage', function (e) {
+        let actualLinkToPage = $(this);
         e.preventDefault();
         $('.box-container').velocity({
             translateX: "9999px",
         }, {
             /* Velocity's default options */
-            duration: 800,
+            duration: 1200,
             visibility: "hidden",
-            display: "none"
+            display: "none",
+            complete: function () {
+                console.log(actualLinkToPage.attr('href'));
+                window.location.href = actualLinkToPage.attr('href');
+            }
         });
 
-        $(this)
+        $('footer').velocity({
+            translateY: "500px",
+        }, {
+            /* Velocity's default options */
+            duration: 1200,
+            display: "none",
+        });
     });
+
 });
