@@ -119,6 +119,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /** HOME PAGE **/
 
+.mainContainer{
+    min-height: 75vh;
+}
 main {
     &#mainPage {
         @extend %main;
@@ -190,7 +193,7 @@ main {
     &#quizzListPage:not(.questions) {
         @extend %main;
         padding-top: 5vh;
-        margin-bottom: 5vh;
+        //margin-bottom: 5vh;
 
         .quizz-box {
             padding-right: 0;
@@ -357,6 +360,7 @@ footer {
     justify-content: center;
     align-content: center;
     align-items: center;
+
 
     & .container {
         align-self: center;

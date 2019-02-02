@@ -1,14 +1,17 @@
-<div class="container container-fluid" style="height: 100%;">
-    <div class="row flex-row flex-wrap">
-        <div class="col-lg-12 col-md-12 mt-md-3 mt-sm-5 mt-xs-3 mt-3" v-for="(quizz, key) in quizzes">
-            {{--<span v-if="quizz.id === '5c3f45e155a8180004b47aea'">--}}
-                <div class="col-12 quizz-box">
-                    <div class="title-description-container justify-content-center align-items-center">
-                        <h3 class="title">{{ $quizzTitle }}</h3>
-                        <h3>Your score is: &nbsp;{{ $userScore }}/{{ $numberOfQuestion  }}</h3>
+<div class="quizzContainer  justify-content-center justify-content-center flex-column">
+    <div class="quizzTitle align-self-start ml-5 mt-4">{{ $quizzTitle }}</div>
+    <div class="quizzQuestion mb-2 align-self-center mt-5 text-center">
+        Your score is: &nbsp;{{ $userScore }} /{{ $numberOfQuestion  }}
+    </div>
+    <div class="responsesContainer mt-5 container">
+        <div class="row">
+            <div class="col-md col-sm  response-button text-center mt-3" v-for="answer in question.questions[questionId].answers">
+                <a href="/quizzes">
+                    <div class="btn btn-primary btn-lg bg-brandblue rounded-0">
+                        Return to quizzes page
                     </div>
-                </div>
-            {{--</span>--}}
+                </a>
+            </div>
         </div>
     </div>
 </div>

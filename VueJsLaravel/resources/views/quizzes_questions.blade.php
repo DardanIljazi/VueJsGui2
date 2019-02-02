@@ -15,11 +15,16 @@
 
 @section('content')
     <main role="main" id="quizzListPage" class="questions">
+        <input id="pageType" type="hidden" value="questions" />
+        <input id="quizzId" type="hidden" value="{{ $id }}" />
         <div class="quizzContainer  justify-content-center justify-content-center flex-column">
-            <template v-for="quizz in quizzes">
+
+            <template v-for="quizz in quizzes.data.quizzes">
+
                 <template v-if="quizz.id === '{{ $id }}'">
                     <div class="quizzTitle align-self-start ml-5 mt-4">@{{ quizz.title }}</div>
                     <template v-for="question in quizzesQuestions">
+
                         <template v-if="question.id === quizz.id">
                             <div class="quizzQuestion mb-2 align-self-center mt-5 text-center">@{{ question.questions[questionId].question  }}</div>
                             <div class="responsesContainer mt-5 container">

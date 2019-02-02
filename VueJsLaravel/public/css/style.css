@@ -88,6 +88,10 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle, h6.subtitle {
 
 /** -- END TOP PAGE **/
 /** HOME PAGE **/
+.mainContainer {
+  min-height: 75vh;
+}
+
 main#mainPage .container {
   margin-top: -10vh;
 }
@@ -140,7 +144,6 @@ main#loginPage .form-signin input[type=password]#inputPasswordConfirm {
 /** QUIZZLIST PAGE **/
 main#quizzListPage:not(.questions) {
   padding-top: 5vh;
-  margin-bottom: 5vh;
 }
 main#quizzListPage:not(.questions) .quizz-box {
   padding-right: 0;
@@ -241,7 +244,7 @@ main#quizzListPage:not(.questions) .quizz-box a .bottom-button:hover {
   align-items: center;
   justify-items: center;
   color: #607D8B;
-  min-height: 40vh;
+  min-height: 30vh;
   width: 50%;
   font-size: 32px;
 }

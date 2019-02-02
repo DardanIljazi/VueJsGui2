@@ -10,6 +10,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 </head>
 <body>
@@ -31,6 +33,9 @@
 <script src="{{ asset("js/jquery.js") }}"></script>
 <script src="{{ asset("js/bootstrap.js") }}"></script>
 <script src="{{ asset("js/script.js") }}"></script>
+<script src="{{ asset("js/velocity.min.js") }}"></script>
+<script src="{{ asset("js/velocity.ui.min.js") }}"></script>
+
 
 </body>
 </html>
