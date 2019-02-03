@@ -1,0 +1,409 @@
+@import "variables";
+@import "bootstrap_modif";
+@import "loadingicon";
+
+/** BOOTSTRAP GRID: **/
+
+$grid-breakpoints: (
+    // Extra small screen / phone
+    xs: 0,
+    // Small screen / phone
+    sm: 576px,
+    // Medium screen / tablet
+    md: 768px,
+    // Large screen / desktop
+    lg: 992px,
+    // Extra large screen / wide desktop
+    xl: 1200px
+);
+
+/** --END OF BOOTSTRAP GRID **/
+
+/** GENERAL ANIMATIONS **/
+@keyframes NAME-YOUR-ANIMATION {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+/** -- END GENERAL ANIMATIONS **/
+
+/** GENERAL MIXIN **/
+
+@mixin transition($duration: 125ms, $type: ease-in-out) {
+    -webkit-transition: all $duration $type;
+    -moz-transition: all $duration $type;
+    -ms-transition: all $duration $type;
+    -o-transition: all $duration $type;
+    transition: all $duration $type;
+}
+
+/** --END OF GENERAL MIXIN **/
+
+/** GENERAL STYLE **/
+
+%basic-font-family {
+    font-family: Roboto, sans-serif;
+}
+
+%main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgLight;
+    min-height: 80vh;
+}
+
+* {
+    @extend %basic-font-family;
+    @include transition();
+
+}
+
+html, body {
+    @extend %basic-font-family;
+    //box-sizing: border-box !important;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $darkGrey;
+    font-weight: normal;
+
+    &.subtitle {
+        color: $lightGrey;
+        font-weight: 300;
+    }
+}
+
+.bg-light-blue {
+    background-color: $lightBlue;
+
+    &.hover-lighten:hover {
+        background-color: lighten($lightBlue, 5%);
+    }
+}
+
+.bg-dark-blue {
+    background-color: $darkBlue;
+
+    &.hover-lighten:hover {
+        background-color: lighten($darkBlue, 5%);
+    }
+}
+
+.bg-light-grey {
+    background-color: $lightGrey;
+
+    &.hover-lighten:hover {
+        background-color: lighten($lightGrey, 5%);
+    }
+}
+
+.bg-dark-grey {
+    background-color: $darkGrey;
+
+    &.hover-lighten:hover {
+        background-color: lighten($darkGrey, 5%);
+    }
+}
+
+.bg-brandblue {
+    background-color: $brandBlue;
+
+    &.hover-lighten:hover {
+        background-color: lighten($brandBlue, 5%);
+    }
+}
+
+/** --END OF GENERAL STYLE **/
+
+/** TOP PAGE **/
+
+#logoMenu {
+    display: inline-block;
+    max-width: 200px;
+}
+
+/** -- END TOP PAGE **/
+
+/** HOME PAGE **/
+
+.mainContainer{
+    min-height: 75vh;
+}
+main {
+    &#mainPage {
+        @extend %main;
+
+        .container {
+            margin-top: -10vh;
+            @media (max-width: #{map-get($grid-breakpoints, sm)}) {
+                margin-top: -20vh;
+            }
+        }
+
+
+        @media (max-width: #{map-get($grid-breakpoints, sm)}) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h4{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+/** --END HOME PAGE **/
+
+/** LOGIN PAGE **/
+
+main {
+    &#loginPage {
+        @extend %main;
+
+        .form-signin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            @media (max-width: #{map-get($grid-breakpoints, lg)}) {
+                width: 55%;
+            }
+
+            @media (max-width: #{map-get($grid-breakpoints, md)}) {
+                width: 80%;
+            }
+
+            @media (max-width: #{map-get($grid-breakpoints, sm)}) {
+                width: 90%;
+            }
+
+            & .form-control {
+                position: relative;
+                box-sizing: border-box;
+                height: auto;
+                padding: 10px;
+                font-size: 16px;
+
+                &:focus {
+                    z-index: 2;
+                }
+            }
+
+            & input[type="email"], & input[type="text"], & input[type="password"]:not(#inputPasswordConfirm) {
+                margin-bottom: -1px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            & input[type="password"]#inputPasswordConfirm {
+                margin-bottom: 10px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+    }
+}
+
+/** --END LOGIN PAGE **/
+
+/** QUIZZLIST PAGE **/
+
+main {
+    background-color: $bgLight;
+    &#quizzListPage:not(.questions) {
+        @extend %main;
+        padding-top: 5vh;
+        //margin-bottom: 5vh;
+
+        .quizz-box {
+            opacity: 0;
+            transform: scale(0.8);
+            padding-right: 0;
+            padding-left: 0;
+            border: 2px solid $darkGrey;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+
+            &:hover {
+                background-color: $lightBlue;
+                border: 2px solid $lightBlue;
+
+                & .description, & .title {
+                    color: white !important;
+                }
+
+                & .bottom-button {
+                    bottom: 0px;
+                }
+            }
+
+            .title-description-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                align-content: center;
+                height: 20vh;
+                margin-top: 4vh;
+
+                .title {
+                    color: $darkGrey;
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 500;
+                }
+
+                .description {
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 300;
+                }
+            }
+
+            a {
+                text-decoration: none;
+
+                .bottom-button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    padding: 0;
+                    margin: 0;
+                    border: 0;
+                    position: relative;
+                    bottom: -8vh;
+
+                    background-color: $darkGrey;
+                    width: 100%;
+                    height: 4vh;
+                    font-weight: 500;
+
+                    &:hover {
+                        background-color: darken($darkGrey, 5%);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: #{map-get($grid-breakpoints, md)}) {
+        .container {
+            width: 95%;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+/** --END QUIZZLIST PAGE **/
+
+
+/** QUIZZ_QUESTION PAGE **/
+
+
+.quizzContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    .questionAndResponsesContainer{
+        width: 100%;
+    }
+
+    .quizzTitle{
+        width: 100%;
+        font-size: 24px;
+        color: $darkGrey;
+
+        @media (max-width: #{map-get($grid-breakpoints, md)}) {
+            font-size: 24px;
+        }
+
+        @media (max-width: #{map-get($grid-breakpoints, sm)}) {
+            font-size: 16px;
+            text-align: center;
+            margin-left: 0 !important;
+        }
+    }
+
+    .quizzQuestion{
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        color: $lightGrey;
+        min-height: 30vh;
+
+        font-size: 32px;
+
+        @media (max-width: #{map-get($grid-breakpoints, md)}) {
+            font-size: 28px;
+        }
+
+        @media (max-width: #{map-get($grid-breakpoints, sm)}) {
+            font-size: 26px;
+        }
+    }
+
+    .quizzImage{
+        img{
+            max-height: 50vh;
+            max-width: 80vw;
+            background-size: cover;
+        }
+    }
+
+    .responsesContainer{
+        .btn{
+            padding: 20px !important;
+
+            @media (min-width: #{map-get($grid-breakpoints, md)}) {
+                width: 60%;
+            }
+
+            @media (min-width: #{map-get($grid-breakpoints, xs)}) and (max-width: #{map-get($grid-breakpoints, sm)}) {
+                width: 80%;
+            }
+        }
+
+    }
+}
+
+
+/** --END QUIZZ_QUESTION PAGE **/
+
+/** RESULT PAGE **/
+    .results-emojis{
+        margin-top: 30px;
+    }
+/** -END RESULT PAGE **/
+
+/** FOOTER **/
+
+footer {
+    background-color: $brandBlue;
+    min-height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+
+    & .container {
+        align-self: center;
+        height: 100%;
+    }
+}
+
+/** --END FOOTER**/
