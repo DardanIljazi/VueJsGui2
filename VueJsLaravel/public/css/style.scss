@@ -212,6 +212,7 @@ main {
 /** QUIZZLIST PAGE **/
 
 main {
+    background-color: $bgLight;
     &#quizzListPage:not(.questions) {
         @extend %main;
         padding-top: 5vh;

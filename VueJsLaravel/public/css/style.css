@@ -226,6 +226,9 @@ main#loginPage .form-signin input[type=password]#inputPasswordConfirm {
 
 /** --END LOGIN PAGE **/
 /** QUIZZLIST PAGE **/
+main {
+  background-color: #FAFCFD;
+}
 main#quizzListPage:not(.questions) {
   padding-top: 5vh;
 }
