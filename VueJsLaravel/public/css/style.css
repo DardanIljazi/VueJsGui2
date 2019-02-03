@@ -166,6 +166,19 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle, h6.subtitle {
 main#mainPage .container {
   margin-top: -10vh;
 }
+@media (max-width: 576px) {
+  main#mainPage .container {
+    margin-top: -20vh;
+  }
+}
+@media (max-width: 576px) {
+  main#mainPage h1 {
+    font-size: 1.5rem;
+  }
+  main#mainPage h4 {
+    font-size: 1.2rem;
+  }
+}
 
 /** --END HOME PAGE **/
 /** LOGIN PAGE **/
@@ -316,6 +329,7 @@ main#quizzListPage:not(.questions) .quizz-box a .bottom-button:hover {
   }
 }
 .quizzContainer .quizzQuestion {
+  padding: 5px;
   width: 100%;
   display: flex;
   justify-content: center;

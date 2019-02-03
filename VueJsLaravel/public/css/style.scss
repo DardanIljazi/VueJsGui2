@@ -136,6 +136,20 @@ main {
 
         .container {
             margin-top: -10vh;
+            @media (max-width: #{map-get($grid-breakpoints, sm)}) {
+                margin-top: -20vh;
+            }
+        }
+
+
+        @media (max-width: #{map-get($grid-breakpoints, sm)}) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h4{
+                font-size: 1.2rem;
+            }
         }
     }
 }
@@ -320,6 +334,7 @@ main {
     }
 
     .quizzQuestion{
+        padding: 5px;
         width: 100%;
         display: flex;
         justify-content: center;

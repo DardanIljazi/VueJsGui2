@@ -17,7 +17,7 @@
     <div class="mainContainer">
         <main role="main" id="quizzListPage">
             <input id="pageType" type="hidden" value="quizzes">
-            <div class="container container-fluid">
+            <div class="container container-fluid mb-5 mt-5">
                 <div class="row flex-row flex-wrap">
                     <template v-if="isApiDataLoaded">
                         <div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 mt-xs-3 mt-3 box-container"
