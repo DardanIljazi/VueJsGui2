@@ -24,7 +24,7 @@
             </h4>
 
             <a href="signup">
-                <button type="button" class="btn btn-lg bg-brandblue hover-lighten rounded-0 text-white mt-5">
+                <button type="button" class="btn btn-lg bg-brandblue hover-lighten rounded-0 text-white mt-5 ">
                     Signup
                 </button>
             </a>

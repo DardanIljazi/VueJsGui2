@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
@@ -33,10 +32,9 @@
 
 <script src="{{ asset("js/jquery.js") }}"></script>
 <script src="{{ asset("js/bootstrap.js") }}"></script>
-<script src="{{ asset("js/script.js") }}"></script>
 <script src="{{ asset("js/velocity.min.js") }}"></script>
 <script src="{{ asset("js/velocity.ui.min.js") }}"></script>
-
+<script src="{{ asset("js/script.js") }}"></script>
 
 </body>
 </html>

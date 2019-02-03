@@ -1,5 +1,6 @@
 @import "variables";
 @import "bootstrap_modif";
+@import "loadingicon";
 
 /** BOOTSTRAP GRID: **/
 
@@ -18,14 +19,21 @@ $grid-breakpoints: (
 
 /** --END OF BOOTSTRAP GRID **/
 
+/** GENERAL ANIMATIONS **/
+@keyframes NAME-YOUR-ANIMATION {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+/** -- END GENERAL ANIMATIONS **/
+
 /** GENERAL MIXIN **/
 
 @mixin transition($duration: 125ms, $type: ease-in-out) {
-    -webkit-transition: all $duration $type !important;
-    -moz-transition: all $duration $type !important;
-    -ms-transition: all $duration $type !important;
-    -o-transition: all $duration $type !important;
-    transition: all $duration $type !important;
+    -webkit-transition: all $duration $type;
+    -moz-transition: all $duration $type;
+    -ms-transition: all $duration $type;
+    -o-transition: all $duration $type;
+    transition: all $duration $type;
 }
 
 /** --END OF GENERAL MIXIN **/
@@ -196,6 +204,8 @@ main {
         //margin-bottom: 5vh;
 
         .quizz-box {
+            opacity: 0;
+            transform: scale(0.8);
             padding-right: 0;
             padding-left: 0;
             border: 2px solid $darkGrey;
@@ -289,7 +299,12 @@ main {
     align-items: center;
     justify-items: center;
 
+    .questionAndResponsesContainer{
+        width: 100%;
+    }
+
     .quizzTitle{
+        width: 100%;
         font-size: 24px;
         color: $darkGrey;
 
@@ -305,13 +320,15 @@ main {
     }
 
     .quizzQuestion{
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         justify-items: center;
+        flex-direction: column;
         color: $lightGrey;
         min-height: 30vh;
-        width: 50%;
+
         font-size: 32px;
 
         @media (max-width: #{map-get($grid-breakpoints, md)}) {
@@ -350,6 +367,11 @@ main {
 
 /** --END QUIZZ_QUESTION PAGE **/
 
+/** RESULT PAGE **/
+    .results-emojis{
+        margin-top: 30px;
+    }
+/** -END RESULT PAGE **/
 
 /** FOOTER **/
 

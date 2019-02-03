@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navbar-toggler {
   border: none !important;
 }
@@ -6,8 +7,78 @@
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(15, 146, 231, 0.99)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.eot?-9haulc");
+  src: url("https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.eot?#iefix-9haulc") format("embedded-opentype"), url("https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.woff?-9haulc") format("woff"), url("https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.ttf?-9haulc") format("truetype"), url("https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.svg?-9haulc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^=icon-], [class*=" icon-"] {
+  font-family: "icomoon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #0f92e7;
+  font-size: 20vh;
+  margin: -5vh auto;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-spinner:before {
+  content: "";
+}
+
+.icon-spinner-2:before {
+  content: "";
+}
+
+.icon-spinner-3:before {
+  content: "";
+}
+
+.icon-spinner-4:before {
+  content: "";
+}
+
+.icon-spinner-5:before {
+  content: "";
+}
+
+.icon-spinner-6:before {
+  content: "";
+}
+
+.icon-spinner-7:before {
+  content: "";
+}
+
+@keyframes rotate360 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.infinite-rotation {
+  animation: 2s rotate360 infinite linear;
+}
+
 /** BOOTSTRAP GRID: **/
 /** --END OF BOOTSTRAP GRID **/
+/** GENERAL ANIMATIONS **/
+@keyframes NAME-YOUR-ANIMATION {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/** -- END GENERAL ANIMATIONS **/
 /** GENERAL MIXIN **/
 /** --END OF GENERAL MIXIN **/
 /** GENERAL STYLE **/
@@ -24,11 +95,11 @@ main#quizzListPage:not(.questions), main#loginPage, main#mainPage {
 }
 
 * {
-  -webkit-transition: all 125ms ease-in-out !important;
-  -moz-transition: all 125ms ease-in-out !important;
-  -ms-transition: all 125ms ease-in-out !important;
-  -o-transition: all 125ms ease-in-out !important;
-  transition: all 125ms ease-in-out !important;
+  -webkit-transition: all 125ms ease-in-out;
+  -moz-transition: all 125ms ease-in-out;
+  -ms-transition: all 125ms ease-in-out;
+  -o-transition: all 125ms ease-in-out;
+  transition: all 125ms ease-in-out;
 }
 
 html, body {
@@ -146,6 +217,8 @@ main#quizzListPage:not(.questions) {
   padding-top: 5vh;
 }
 main#quizzListPage:not(.questions) .quizz-box {
+  opacity: 0;
+  transform: scale(0.8);
   padding-right: 0;
   padding-left: 0;
   border: 2px solid #666666;
@@ -222,7 +295,11 @@ main#quizzListPage:not(.questions) .quizz-box a .bottom-button:hover {
   align-items: center;
   justify-items: center;
 }
+.quizzContainer .questionAndResponsesContainer {
+  width: 100%;
+}
 .quizzContainer .quizzTitle {
+  width: 100%;
   font-size: 24px;
   color: #666666;
 }
@@ -239,13 +316,14 @@ main#quizzListPage:not(.questions) .quizz-box a .bottom-button:hover {
   }
 }
 .quizzContainer .quizzQuestion {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-items: center;
+  flex-direction: column;
   color: #607D8B;
   min-height: 30vh;
-  width: 50%;
   font-size: 32px;
 }
 @media (max-width: 768px) {
@@ -278,6 +356,12 @@ main#quizzListPage:not(.questions) .quizz-box a .bottom-button:hover {
 }
 
 /** --END QUIZZ_QUESTION PAGE **/
+/** RESULT PAGE **/
+.results-emojis {
+  margin-top: 30px;
+}
+
+/** -END RESULT PAGE **/
 /** FOOTER **/
 footer {
   background-color: #378CEF;

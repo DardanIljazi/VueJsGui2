@@ -19,17 +19,25 @@
             <input id="pageType" type="hidden" value="quizzes">
             <div class="container container-fluid">
                 <div class="row flex-row flex-wrap">
-                    <div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 mt-xs-3 mt-3 box-container" v-for="quizz in quizzes.data.quizzes">
-                        <div class="quizz-box">
-                            <a :href="'quizzes/'+quizz.id" class="linktopage">
-                                <div class="title-description-container">
-                                    <h3 class="title">@{{ quizz.title }}</h3>
-                                    <h6 class="description">@{{ quizz.description }}</h6>
-                                </div>
-                                <button type="button" class="bottom-button text-light text-center">Start</button>
-                            </a>
+                    <template v-if="isApiDataLoaded">
+                        <div class="col-lg-3 col-md-6 mt-md-3 mt-sm-5 mt-xs-3 mt-3 box-container"
+                             v-for="quizz in quizzes.data.quizzes">
+                            <div class="quizz-box">
+                                <a :href="'quizzes/'+quizz.id" class="linktopage">
+                                    <div class="title-description-container">
+                                        <h3 class="title">@{{ quizz.title }}</h3>
+                                        <h6 class="description">@{{ quizz.description }}</h6>
+                                    </div>
+                                    <button type="button" class="bottom-button text-light text-center">Start</button>
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    </template>
+                    <template v-else>
+                            <div class="icon-spinner-2 infinite-rotation">
+
+                            </div>
+                    </template>
                 </div>
             </div>
         </main>

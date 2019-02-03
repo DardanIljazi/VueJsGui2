@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc8d56c8-12d9-40bb-86a8-e4481d9c0dd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/VueJsLaravel/public/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueJsLaravel/resources/views/mainQuizzPage.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueJsLaravel/public/css/_loadingicon.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueJsLaravel/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/public/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueJsLaravel/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_questions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_questions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueJsLaravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/VueJsLaravel/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_questions.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+            <state relative-caret-position="585">
+              <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -45,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="193" column="22" lean-forward="true" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
+            <state relative-caret-position="232">
+              <caret line="371" column="21" selection-start-line="371" selection-start-column="21" selection-end-line="371" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -54,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="21" column="132" lean-forward="true" selection-start-line="21" selection-start-column="132" selection-end-line="21" selection-end-column="132" />
+            <state relative-caret-position="493">
+              <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -63,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueJsLaravel/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="35" column="34" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="34" />
+            <state relative-caret-position="209">
+              <caret line="34" column="208" lean-forward="true" selection-start-line="34" selection-start-column="208" selection-end-line="34" selection-end-column="208" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
               </folding>
@@ -75,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="26" column="100" lean-forward="true" selection-start-line="26" selection-start-column="100" selection-end-line="26" selection-end-column="100" />
+            <state relative-caret-position="575">
+              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -84,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="391">
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -93,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="106" column="28" lean-forward="true" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
+            <state relative-caret-position="421">
+              <caret line="134" column="28" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -102,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+            <state relative-caret-position="660">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -121,36 +128,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-size</find>
-      <find>grid-break</find>
-      <find>dark</find>
-      <find>title</find>
-      <find>app</find>
-      <find>questionsListPage</find>
-      <find>quizzList</find>
-      <find>5c3f45e155a8180004b47aea</find>
-      <find>5c4592fb28asda39b00045f1945</find>
-      <find>5c4592fb28a39b00045f1945</find>
-      <find>quizzQU</find>
-      <find>width: 100</find>
-      <find>responseCon</find>
-      <find>response</find>
-      <find>quizzTitle</find>
-      <find>&lt;p</find>
-      <find>&lt;!--</find>
-      <find>quizzQuestion</find>
-      <find>answe</find>
-      <find>actualGoo</find>
-      <find>env</find>
-      <find>.env</find>
-      <find>quizzes</find>
-      <find>footer</find>
-      <find>quizzListPage</find>
-      <find>quizzId</find>
-      <find>actualPage</find>
       <find>try it now</find>
       <find>taken</find>
+      <find>animatecss</find>
       <find>animate</find>
+      <find>isApiDataLoaded</find>
+      <find>apiDataLoaded</find>
+      <find>125</find>
+      <find>velocity</find>
+      <find>veloci</find>
+      <find>setTime</find>
+      <find>quizz-box</find>
+      <find>zoomIn</find>
+      <find>zomIn</find>
+      <find>click</find>
+      <find>transform</find>
+      <find>fade</find>
+      <find>title</find>
+      <find>animated</find>
+      <find>quizzContainer</find>
+      <find>container</find>
+      <find>questionAnd</find>
+      <find>quizzerCon</find>
+      <find>quizzCon</find>
+      <find>quizz</find>
+      <find>quizzTitle</find>
+      <find>confused</find>
+      <find>result</find>
+      <find>emojis</find>
+      <find>neutral</find>
+      <find>translateX</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -178,16 +185,17 @@
         <option value="$PROJECT_DIR$/VueJsLaravel/.env" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/css/style.scss" />
-        <option value="$PROJECT_DIR$/VueJsLaravel/public/css/style.scss" />
-        <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php" />
         <option value="$PROJECT_DIR$/VueJsLaravel/public/js/velocity.js" />
         <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/mainQuizzPage.blade.php" />
-        <option value="$PROJECT_DIR$/VueJsLaravel/routes/web.php" />
-        <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes.blade.php" />
         <option value="$PROJECT_DIR$/VueJsLaravel/public/css/animate.css" />
+        <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes.blade.php" />
+        <option value="$PROJECT_DIR$/VueJsLaravel/public/css/_loadingicon.scss" />
         <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_questions.blade.php" />
+        <option value="$PROJECT_DIR$/VueJsLaravel/public/css/style.scss" />
+        <option value="$PROJECT_DIR$/VueJsLaravel/routes/web.php" />
+        <option value="$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php" />
         <option value="$PROJECT_DIR$/VueJsLaravel/public/js/script.js" />
       </list>
     </option>
@@ -284,8 +292,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="680" />
-    <option name="width" value="1007" />
+    <option name="x" value="-7" />
+    <option name="width" value="1006" />
     <option name="height" value="1017" />
   </component>
   <component name="ProjectView">
@@ -310,6 +318,20 @@
               <item name="VueJsGui2" type="462c0819:PsiDirectoryNode" />
               <item name="VueJsLaravel" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VueJsGui2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VueJsGui2" type="462c0819:PsiDirectoryNode" />
+              <item name="VueJsLaravel" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VueJsGui2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VueJsGui2" type="462c0819:PsiDirectoryNode" />
+              <item name="VueJsLaravel" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VueJsGui2" type="b2602c69:ProjectViewProjectNode" />
@@ -357,15 +379,15 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\VueJsGui2\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\VueJsGui2\VueJsLaravel\public\css" />
       <recent name="C:\wamp\www\VueJsGui2\VueJsLaravel\resources\views" />
       <recent name="C:\wamp\www\VueJsGui2\VueJsLaravel\public\js" />
       <recent name="C:\wamp64\www\VueJsGui2\VueJsLaravel\resources\views" />
       <recent name="C:\wamp64\www\VueJsGui2\VueJsLaravel" />
-      <recent name="C:\wamp\www\VueJsGui2\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\VueJsGui2\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -400,18 +422,19 @@
       <workItem from="1548832416816" duration="7154000" />
       <workItem from="1548841272951" duration="10164000" />
       <workItem from="1548935495394" duration="9965000" />
-      <workItem from="1549058794885" duration="17749000" />
+      <workItem from="1549058794885" duration="17799000" />
+      <workItem from="1549122720258" duration="18905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92306000" />
+    <option name="totallyTimeSpent" value="111261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19498777" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15464547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -598,16 +621,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="844">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.env" />
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/VueJsLaravel/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -646,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="193" column="22" lean-forward="true" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/mainQuizzPage.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -660,62 +668,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83329">
+          <caret line="3623" selection-start-line="3623" selection-end-line="3623" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/img/hundred_points.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/css/_loadingicon.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1265">
+          <caret line="55" column="63" lean-forward="true" selection-start-line="55" selection-start-column="63" selection-end-line="55" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="21" column="132" lean-forward="true" selection-start-line="21" selection-start-column="132" selection-end-line="21" selection-end-column="132" />
+        <state relative-caret-position="493">
+          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="371" column="21" selection-start-line="371" selection-start-column="21" selection-end-line="371" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VueJsLaravel/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="34" />
+        <state relative-caret-position="209">
+          <caret line="34" column="208" lean-forward="true" selection-start-line="34" selection-start-column="208" selection-end-line="34" selection-end-column="208" />
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/home.blade.php">
+    <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_questions.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="26" column="100" lean-forward="true" selection-start-line="26" selection-start-column="100" selection-end-line="26" selection-end-column="100" />
+        <state relative-caret-position="585">
+          <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_results.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/css/animate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="3556" column="1" lean-forward="true" selection-start-line="3556" selection-start-column="1" selection-end-line="3556" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/quizzes_questions.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VueJsLaravel/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        <state relative-caret-position="391">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VueJsLaravel/public/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="106" column="28" lean-forward="true" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
+        <state relative-caret-position="421">
+          <caret line="134" column="28" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
         </state>
       </provider>
     </entry>
