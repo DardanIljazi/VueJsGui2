@@ -23,7 +23,7 @@ composer install
 npm i
 ```
 
-### III. Set up .env and database
+### III. Set up .env
 When the dependencies are installed you must duplicate the ``.env.example`` file and rename it to ``.env``.
 
 
